@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbhak Mart</title>
+    <link rel="website icon" 
+    href="tb.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Judul -->
+        <header>
+            
+               <h1>Starbhak Mart</h1>
+        </header>
+        <!-- Judul Tutup -->
+
+        <!-- Kotak utama -->
+        <div class="kotak">
+
+            <!-- Sidebar -->
+            <div class="kiri" id="section-to-print">
+
+                <!-- Button paling atas -->
+                <select class="satu">
+                    <option hidden>Pilih Jenis Pemesanan</option>
+                    <option>Take Away</option>
+                    <option>Delivery</option>
+                </select>
+                <button class="dua"><span class="material-symbols-outlined"
+                        style="color: black !important; font-size: 16px; ">
+                        face
+                    </span>Arya.P</button>
+                <!-- Penutup -->
+
+                <!-- Penampung class baru -->
+                <div class="belanja">
+                    <div class="barang" style="display: none;"> 
+                        <div class="detail-kiri">
+                            <p id="nama-barang" style="font-size: small; font-weight: 500;"></p>
+                            <p id="harga-satuan" style="text-align: right; font-size: small;"></p>
+                        </div>
+                        <div class="detail-kanan">
+                            <p class="normal">Unit Price : <span id="harga-banyak"></span></p>
+                            <p class="normal" style="display: flex; justify-content: space-between; gap: 4em;">Quantity : <span class="stock" id="stok-${itemName}"></span></p>
+                        </div>
+                        <button id="remove">
+                            <span class="material-symbols-outlined" id="hapus">
+                                delete
+                                </span>
+                        </button>
+                    </div>
+                </div>
+                <!-- tutup class baru -->
+
+                <!-- Tempat Harga barang -->
+                <div class="jajan" id="section-to-print">
+                    <P style="display: flex; justify-content: space-between;">Discount : <span id="discount">0</span></P>
+                    <p id="totalPrice" style="display: none;"></p>
+                    <P style="display: flex; justify-content: space-between;">Tax : <span id="taxDiscount">0</span></P>
+                    <div class="pay">
+                        <p>Total Amount : </p>
+                        <p id="totalAmount">0</p>
+                    </div>
+                </div>
+                <!-- Penutup harga barang -->
+
+            </div>
+            <!-- Penutup Sidebar -->
+
+            <!-- Kotak penampung sebelah kanan / Main Content -->
+            <div class="kanan">
+
+                <!-- Navbar 3 paling atas-->
+                <nav>
+                    <!-- Nav sebelah kiri -->
+                    <div class="nav_kiri">
+                        <p>Item List</p>
+                    </div>
+
+                    <!-- Nav sebelah kanan -->
+                    <div class="nav_kanan">
+                        
+                        <!-- Search Icon -->
+                        <div class="cari"> 
+                            <span class="material-symbols-outlined" id="searchIcon">
+                                search
+                            </span>
+                            <input type="text" id="searchInput" placeholder="search" style="display: none;">
+                        </div>
+                        <!-- Penutup search -->
+
+                        <!-- option icon -->
+                        <span class="material-symbols-outlined">
+                            more_vert
+                        </span>
+                        <!-- penutup option -->
+
+                        <!-- urutkan item -->
+                        <span class="material-symbols-outlined" id="sortByName">
+                            swap_vert
+                            </span>
+                        <!-- penutup urut -->
+                    </div>
+                </nav>
+                <!-- Penutup Navbbar -->
+
+                <!-- List barang -->
+                <section>
+
+                    <!-- 1 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://joyfoodsunshine.com/wp-content/uploads/2022/11/breakfast-egg-sandwich-recipe-9.jpg" alt="">
+                        </div>
+                        <p>EEG Sandwich</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvVl11g79GsDFUHGkFdQZfujUriCUvQOTP_g&usqp=CAU" alt="">
+                        </div>
+                        <p>HAM Chicken</p>
+                        <h1>Rp. 17.000</h1>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://www.eatingonadime.com/wp-content/uploads/2022/08/eod-grilled-ham-and-cheese-2-2.jpg" alt="">
+                        </div>
+                        <p>HAM Chese</p>
+                        <h1>Rp. 15.000</h1>
+                    </div>
+
+
+                    <!-- 5 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://www.masakapahariini.com/wp-content/uploads/2018/10/burger-rendang-MAHI-6.jpg" alt="">
+                        </div>
+                        <p>Burger</p>
+                        <h1>Rp. 18.000</h1>
+                    </div>
+
+                    <!-- 20 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://img-global.cpcdn.com/recipes/c0837579b360054e/1200x630cq70/photo.jpg" alt="">
+                        </div>
+                        <p>Masala Cola</p>
+                        <h1>Rp. 8.000</h1>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkz0t3-AupSXsKw8jyFBp1IQ4CJAug8d3JUg&usqp=CAU" alt="">
+                        </div>
+                        <p>Mutton Burger</p>
+                        <h1>Rp. 25.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://culinaryginger.com/wp-content/uploads/Tilapia-Burgers-15-720x720.jpg" alt="">
+                        </div>
+                        <p>Fish Burger</p>
+                        <h1>Rp. 23.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://www.nestleprofessional.in/sites/default/files/2021-08/Masala-Iced-Tea_1.jpg" alt="">
+                        </div>
+                        <p>Ice Lemon</p>
+                        <h1>Rp. 9.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://cdns.klimg.com/merdeka.com/i/w/news/2022/05/30/1439640/540x270/6-resep-aneka-katsu-ala-rumahan-enak-dan-menggugah-selera.jpg" alt="">
+                        </div>
+                        <p>Chicken Katsu</p>
+                        <h1>Rp. 20.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw-4BH_A0-txE0Iys3OeBpCIqCvaQ8J3_6Nw&usqp=CAU" alt="">
+                        </div>
+                        <p>Mutton Kebab Burger</p>
+                        <h1>Rp. 17.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wwZzo4G8HI6tFaYNq-WahHYeThRMkjN4Jg&usqp=CAU" alt="">
+                        </div>
+                        <p>Mint Lemonade</p>
+                        <h1>Rp. 11.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://img-global.cpcdn.com/recipes/a291dc256e5ba553/680x482cq70/green-delight-juice-foto-resep-utama.jpg" alt="">
+                        </div>
+                        <p>Green Aple Lemon</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://shopee.co.id/inspirasi-shopee/wp-content/uploads/2021/09/ezgif.com-gif-maker-2021-09-06T160211.398.webp" alt="">
+                        </div>
+                        <p>Waffle Hot</p>
+                        <h1>Rp. 16.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://www.sargento.com/assets/Uploads/Recipe/Image/stuffed-mushroom__FillWzExNzAsNTgzXQ.jpg" alt="">
+                        </div>
+                        <p>Cheesy Mushrooms</p>
+                        <h1>Rp. 45.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSvDS3xyq18JwSIA037-81Zfd2wQGl7MQXhA&usqp=CAU" alt="">
+                        </div>
+                        <p>Lassi Sweet</p>
+                        <h1>Rp. 8.500</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://i.pinimg.com/originals/4b/d8/be/4bd8beec8d6e941c9db2ad9b9d02c283.jpg" alt="">
+                        </div>
+                        <p>Pempek Palembang</p>
+                        <h1>Rp. 38.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://assets-pergikuliner.com/CN-IrEVMkxFt1T7qy44Tt3BVBPg=/fit-in/1366x768/smart/filters:no_upscale()/https://assets-pergikuliner.com/uploads/bootsy/image/22637/tempat_makan_di_cikini.jpg" alt="">
+                        </div>
+                        <p>Nasi Kebuli</p>
+                        <h1>Rp. 50.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://img-global.cpcdn.com/recipes/98fc9fcef2e248a2/1200x630cq70/photo.jpg" alt="">
+                        </div>
+                        <p>Jus Buah Naga</p>
+                        <h1>Rp. 9.500</h1>
+                    </div>
+                </section>
+
+                <!-- Penutup list barang -->
+
+            </div>
+            <!-- Penutup kotak sebelah kanan -->
+
+        </div>
+        <!-- penutup keseluruhan kotak -->
+
+        <!-- footer -->
+        <div class="payment">
+            <Button id="bayar">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                <span>
+                    <p>Payment</p>
+                    <p>(CTRL + P)</p>
+                </span>
+            </Button>
+        </div>
+
+        <footer>
+            <p>Ready</p>
+        </footer>
+
+        <!-- penutup footer -->
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="short.js"></script>
+    <script src="print.js"></script>
+</html>
