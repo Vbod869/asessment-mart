@@ -243,6 +243,29 @@ body{
     transition: transform 0.3s ease-in-out;
 }
 
+.isi {
+    animation: masuk 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+  }
+  
+  @keyframes masuk {
+    0% {
+      opacity: 0;
+      transform: translate(0, 50px);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  
+
 .kanan section .isi:hover{
     transform: translateY(5px);
 }
